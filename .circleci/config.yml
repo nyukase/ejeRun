@@ -38,7 +38,7 @@ jobs:
       
   build_04:
     docker:
-      - image: microsoft/dotnet:latest
+      - image: node:11.10.1
 
     working_directory: ~/repo
     steps:
@@ -74,7 +74,7 @@ jobs:
       
   build_07:
     docker:
-      - image: circleci/openjdk:8-jdk
+      - image: node:11.10.1
 
     working_directory: ~/repo
     steps:
@@ -98,7 +98,7 @@ jobs:
 
   build_09:
     docker:
-      - image: circleci/php:7.1-node-browsers
+      - image: node:11.10.1
 
     working_directory: ~/repo
     steps:
@@ -158,7 +158,7 @@ jobs:
       
   build_14:
     docker:
-      - image: microsoft/dotnet:latest
+      - image: node:11.10.1
 
     working_directory: ~/repo
     steps:
@@ -194,7 +194,7 @@ jobs:
       
   build_17:
     docker:
-      - image: circleci/openjdk:8-jdk
+      - image: node:11.10.1
 
     working_directory: ~/repo
     steps:
@@ -218,7 +218,7 @@ jobs:
 
   build_19:
     docker:
-      - image: circleci/php:7.1-node-browsers
+      - image: node:11.10.1
 
     working_directory: ~/repo
     steps:
@@ -230,6 +230,113 @@ jobs:
       
   build_20:
     docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+  build_21:
+    docker:
+      - image: cimg/python:3.8
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_22:
+    docker:
+      - image: circleci/ruby:2.6.3-stretch-node
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_23:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+
+  build_24:
+    docker:
+      - image: circleci/clojure:lein-2.9.5
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_25:
+    docker:
+      - image: circleci/golang:1.15.8
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_26:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_27:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+
+  build_28:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_29:
+    docker:
       - image: circleci/elixir:1.4
 
     working_directory: ~/repo
@@ -240,6 +347,377 @@ jobs:
       - run: chmod u+x *
       - run: ./run
 
+  build_30:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_31:
+    docker:
+      - image: cimg/python:3.8
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_32:
+    docker:
+      - image: circleci/ruby:2.6.3-stretch-node
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_33:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+
+  build_34:
+    docker:
+      - image: circleci/clojure:lein-2.9.5
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_35:
+    docker:
+      - image: circleci/golang:1.15.8
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_36:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_37:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+
+  build_38:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_39:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+build_40:
+    docker:
+      - image: cimg/python:3.8
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_41:
+    docker:
+      - image: circleci/ruby:2.6.3-stretch-node
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_42:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+
+  build_43:
+    docker:
+      - image: circleci/clojure:lein-2.9.5
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_44:
+    docker:
+      - image: circleci/golang:1.15.8
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_45:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_46:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+
+  build_47:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_48:
+    docker:
+      - image: circleci/elixir:1.4
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+
+  build_49:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_50:
+    docker:
+      - image: cimg/python:3.8
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_51:
+    docker:
+      - image: circleci/ruby:2.6.3-stretch-node
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_52:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+
+  build_53:
+    docker:
+      - image: circleci/clojure:lein-2.9.5
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_54:
+    docker:
+      - image: circleci/golang:1.15.8
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_55:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_56:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+
+  build_57:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_58:
+    docker:
+      - image: node:11.10.1
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+build_59:
+    docker:
+      - image: cimg/python:3.8
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  build_60:
+    docker:
+      - image: circleci/ruby:2.6.3-stretch-node
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run: chmod u+x run
+      - run: chmod u+x *
+      - run: ./run
+      
+  
 workflows:
     version: 2
     build:
@@ -264,3 +742,43 @@ workflows:
             - build_18
             - build_19
             - build_20
+            - build_21
+            - build_22
+            - build_23
+            - build_24
+            - build_25
+            - build_26
+            - build_27
+            - build_28
+            - build_29
+            - build_30
+            - build_31
+            - build_32
+            - build_33
+            - build_34
+            - build_35
+            - build_36
+            - build_37
+            - build_38
+            - build_39
+            - build_40
+            - build_41
+            - build_42
+            - build_43
+            - build_44
+            - build_45
+            - build_46
+            - build_47
+            - build_48
+            - build_49
+            - build_50
+            - build_51
+            - build_52
+            - build_53
+            - build_54
+            - build_55
+            - build_56
+            - build_57
+            - build_58
+            - build_59
+            - build_60
