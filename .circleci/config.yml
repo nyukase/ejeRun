@@ -18,7 +18,7 @@ jobs:
       
   build_02:
     docker:
-      - image: cimg/base:stable
+      - image: node:11.10.1
 
     working_directory: ~/repo
     steps:
@@ -31,7 +31,8 @@ jobs:
       
   build_03:
     docker:
-      - image: cimg/base:stable
+      - image: cimg/python:3.8
+
 
     working_directory: ~/repo
     steps:
@@ -44,7 +45,7 @@ jobs:
       
   build_04:
     docker:
-      - image: cimg/base:stable
+      - image: circleci/ruby:2.6.3-stretch-node
 
     working_directory: ~/repo
     steps:
@@ -57,7 +58,7 @@ jobs:
 
   build_05:
     docker:
-      - image: cimg/base:stable
+      - image: circleci/clojure:lein-2.9.5
 
     working_directory: ~/repo
     steps:
@@ -70,7 +71,7 @@ jobs:
       
   build_06:
     docker:
-      - image: cimg/base:stable
+      - image: circleci/golang:1.15.8
 
     working_directory: ~/repo
     steps:
@@ -83,7 +84,7 @@ jobs:
       
   build_07:
     docker:
-      - image: cimg/base:stable
+      - image: circleci/elixir:1.4
 
     working_directory: ~/repo
     steps:
@@ -109,7 +110,7 @@ jobs:
 
   build_09:
     docker:
-      - image: cimg/base:stable
+      - image: cimg/python:3.8
 
     working_directory: ~/repo
     steps:
@@ -122,8 +123,7 @@ jobs:
       
   build_10:
     docker:
-      - image: cimg/base:stable
-
+      - image: node:11.10.1
     working_directory: ~/repo
     steps:
       - checkout
@@ -134,7 +134,7 @@ jobs:
           command: "chmod +x runner.sh && ./runner.sh"
   build_11:
     docker:
-      - image: cimg/base:stable
+      - image: cimg/python:3.8
 
     working_directory: ~/repo
     steps:
@@ -150,7 +150,7 @@ jobs:
       
   build_12:
     docker:
-      - image: cimg/base:stable
+      - image: cimg/python:3.8
 
     working_directory: ~/repo
     steps:
